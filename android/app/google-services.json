@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "580683511614",
+    "project_id": "shoppu-ab788",
+    "storage_bucket": "shoppu-ab788.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580683511614:android:0caeac11ba987afdaf9e6f",
+        "android_client_info": {
+          "package_name": "com.example.shoppu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580683511614-8g96dttueacirremr9mh7tev9jvceuus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-FyCWhYHdaaP97xoLSHbG5jvzTdMHstM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580683511614-8g96dttueacirremr9mh7tev9jvceuus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
