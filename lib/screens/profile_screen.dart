@@ -26,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
             ProfileMenu(
               text: "My Account",
               icon: FontAwesomeIcons.user,
-              onPressed: () => {},
+              onPressed: () {},
             ),
             ProfileMenu(
               text: "Notifications",
@@ -36,7 +36,9 @@ class ProfileScreen extends StatelessWidget {
             ProfileMenu(
               text: "Settings",
               icon: FontAwesomeIcons.gears,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, completeProfile);
+              },
             ),
             ProfileMenu(
               text: "Help Center",
@@ -82,8 +84,9 @@ class ProfileMenu extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(
           padding: const EdgeInsets.all(20),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
           backgroundColor: const Color(0xFFF5F6F9),
         ),
         onPressed: onPressed,
@@ -98,7 +101,9 @@ class ProfileMenu extends StatelessWidget {
               child: Text(
                 text,
                 style: GoogleFonts.inter(
-                    fontWeight: FontWeight.normal, color: Colors.black),
+                  fontWeight: FontWeight.normal,
+                  color: Colors.black,
+                ),
               ),
             ),
             const Icon(Icons.arrow_forward_ios),

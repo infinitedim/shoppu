@@ -11,7 +11,7 @@ class CompleteProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up'),
+        title: const Text('Profile'),
       ),
       body: SizedBox(
         width: double.infinity,
@@ -72,8 +72,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               labelText: "First Name",
               hintText: "Enter your first name",
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: Container(
-                padding: const EdgeInsets.only(left: 20.0),
+              prefixIcon: Container(
+                padding: const EdgeInsets.only(top: 10.0, left: 15.0),
                 child: const FaIcon(FontAwesomeIcons.person),
               ),
             ),
@@ -82,13 +82,12 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             height: getProportionateScreenHeight(30),
           ),
           TextFormField(
-            onSaved: (newValue) => lastName = newValue,
             decoration: InputDecoration(
               labelText: "Last Name",
               hintText: "Enter your last name",
               floatingLabelBehavior: FloatingLabelBehavior.always,
               prefixIcon: Container(
-                padding: const EdgeInsets.only(left: 20.0),
+                padding: const EdgeInsets.only(top: 10.0, left: 15.0),
                 child: const FaIcon(FontAwesomeIcons.person),
               ),
             ),
@@ -98,14 +97,13 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           ),
           TextFormField(
             keyboardType: TextInputType.phone,
-            onSaved: (newValue) => phoneNumber = newValue,
             onChanged: (value) {},
             decoration: InputDecoration(
               labelText: "Phone Number",
               hintText: "Enter your phone number",
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: Container(
-                padding: const EdgeInsets.only(left: 20.0),
+              prefixIcon: Container(
+                padding: const EdgeInsets.only(top: 10.0, left: 15.0),
                 child: const FaIcon(FontAwesomeIcons.phone),
               ),
             ),
@@ -120,8 +118,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               labelText: "Address",
               hintText: "Enter your phone address",
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: Container(
-                padding: const EdgeInsets.only(left: 20.0),
+              prefixIcon: Container(
+                padding: const EdgeInsets.only(top: 10.0, left: 15.0),
                 child: const FaIcon(FontAwesomeIcons.locationDot),
               ),
             ),
